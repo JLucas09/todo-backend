@@ -2,7 +2,7 @@ from fastapi import FastAPI, Request
 from schemas.healthcheck import HealthCheck
 from api.v1.api_v1 import api_router
 
-app = FastAPI(title="TO-DO")
+app = FastAPI(title="Notes Project")
 
 @app.get("/", response_model=HealthCheck, tags=["HealthCheck"])
 async def health_check(request: Request):
